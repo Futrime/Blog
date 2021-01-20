@@ -1,0 +1,146 @@
+theme = "hugo-theme-stack"
+paginate = 10
+disqusShortname = "futrime"            # Change it to your Disqus shortname before using
+defaultContentLanguageInSubdir = true
+defaultContentLanguage = "en"
+baseurl = "https://blog.futrime.com"
+
+[languages]
+	[languages.zh-cn]
+		title = "Futrime的博客"
+		languageCode = "zh-cn"
+		contentDir = "content/zh-cn"
+		[languages.zh-cn.params.comments]
+			enabled = true
+			provider = "beaudar"         # Available: disqus, utterances
+			[languages.zh-cn.params.comments.utterances]
+				repo = "Futrime/utterances"
+				issueTerm = "title"
+				label = ""             # Optional
+				theme = "preferred-color-scheme"
+
+		[languages.zh-cn.menu]
+		    [[languages.zh-cn.menu.main]]
+		        identifier = "home"
+		        name = "主页"
+		        url = "/"
+		        weight = -100
+		        pre = "home"
+		    [[languages.zh-cn.menu.main]]
+		        identifier = "about-cn"
+		        name = "关于"
+		        url = "about"
+		        weight = -90
+		        pre = "user"
+		    [[languages.zh-cn.menu.main]]
+		        identifier = "archives"
+		        name = "归档"
+		        url = "archives"
+		        weight = -70
+		        pre = "archives"
+		[languages.zh-cn.params.article.license]
+			enabled = true
+			default = 'CC BY 4.0'
+		[languages.zh-cn.params.sidebar]
+			emoji = "🇨🇳"
+			jump = "/en"
+			avatar = "img/avatar.jpg"
+			subtitle = "这是一个计算机爱好者Futrime的个人博客，包含Futrime的所思所想、学习心路、折腾记录、闲言碎语和参与各种活动的记录。"
+		[languages.zh-cn.params.dateFormat]
+	        published = "2006-01-02"
+	        lastUpdated = "2006-01-02 15:04 MST"
+
+
+	[languages.en]
+		title = "Futrime's Blog"
+		languageCode = "en"
+		contentDir = "content/en"
+		[languages.en.params.comments]
+			enabled = true
+			provider = "utterances"         # Available: disqus, utterances
+			[languages.en.params.comments.utterances]
+				repo = "Futrime/utterances"
+				issueTerm = "title"
+				label = ""             # Optional
+				theme = "preferred-color-scheme"
+
+		[languages.en.menu]
+		    [[languages.en.menu.main]]
+		        identifier = "home"
+		        name = "Home"
+		        url = "/"
+		        weight = -100
+		        pre = "home"
+		    [[languages.en.menu.main]]
+		        identifier = "about-cn"
+		        name = "About"
+		        url = "about"
+		        weight = -90
+		        pre = "user"
+		    [[languages.en.menu.main]]
+		        identifier = "archives"
+		        name = "Archives"
+		        url = "archives"
+		        weight = -70
+		        pre = "archives"
+		[languages.en.params.article.license]
+			enabled = true
+			default = 'CC BY 4.0'
+		[languages.en.params.sidebar]
+			emoji = "🇺🇸"
+			jump = "/zh-cn"
+			avatar = "img/avatar.jpg"
+			subtitle = "This is the blog of a Computer Science enthusiast Futrime, consisting of Futrime’s thinking, studies, footprints and some stuff. "
+		[languages.en.params.dateFormat]
+	        published = "Jan 02, 2006"
+	        lastUpdated = "Jan 02, 2006 15:04 MST"
+
+
+[permalinks]
+    post = "/p/:slug/"
+    page = "/:slug/"
+
+[params]
+    mainSections = ["post"]
+    featuredImageField = "image"
+    rssFullContent = true
+
+    [params.article]
+        math = false
+
+    [params.widgets]
+        enabled = ['archives', 'tag-cloud']
+        [params.widgets.archives]
+            limit = 5
+            ### Archives page relative URL
+            path = "archives"
+        [params.widgets.tagCloud]
+            limit = 20
+
+    [params.opengraph]
+        [params.opengraph.twitter]
+            site = ""
+            card = "summary_large_image"
+
+    [params.defaultImage]
+        [params.defaultImage.opengraph]
+            enabled = false
+            local = false
+            src = ""
+
+[related]
+    includeNewer = true
+    threshold = 60
+    toLower = false
+
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+
+    [[related.indices]]
+        name = "categories"
+        weight = 200
+
+[markup]
+    [markup.highlight]
+        noClasses = false
