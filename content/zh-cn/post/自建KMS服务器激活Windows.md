@@ -12,7 +12,7 @@ tags:
     - 激活
     - 服务器
 image: https://i.loli.net/2021/01/31/zyxtkNjADvIYla4.jpg
-draft: true
+draft: false
 ---
 
 本文不鼓励使用盗版软件的行为，如果您在商业领域使用Windows或者具有经济条件，强烈建议您前往官网购买正版Windows以避免法律纠纷，获得最好的软件体验。
