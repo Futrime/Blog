@@ -35,9 +35,7 @@ draft: false
 
 ![淘宝搜索](https://i.loli.net/2021/01/31/sPzy1TvVGFixwYL.png)
 
-三四年前，我也常常使用这种方式激活我的Windows，但是后来发现，这类激活方式往往存在激活时间有限的问题；并且因为这类密钥往往来自企业批量购买流出，部分企业会采取对于员工激活的系统进行一定的审查的策略，所以用户的计算机有可能会被访问到，因此也并不太安全。具体请见：
-
-<iframe src="//player.bilibili.com/player.html?aid=38717781&bvid=BV1Bt411Y7wd&cid=68059490&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+三四年前，我也常常使用这种方式激活我的Windows，但是后来发现，这类激活方式往往存在激活时间有限的问题；并且因为这类密钥往往来自企业批量购买流出，部分企业会采取对于员工激活的系统进行一定的审查的策略，所以用户的计算机有可能会被访问到，因此也并不太安全。具体请见[5块钱的win10激活码能用么？淘宝密钥背后的秘密：盗版系统有什么危害？](https://www.bilibili.com/video/BV1Bt411Y7wd)。
 
 在如此多的方案都存在各种各样的问题的情况下，到底有没有什么方案是比较好用的呢？
 
@@ -67,7 +65,7 @@ docker run -d --restart always -p 1688:1688 pykmsorg/py-kms
 slmgr /upk
 ```
 
-```
+```sh
 slmgr /ipk <刚才查询到的许可证密钥>
 ```
 
