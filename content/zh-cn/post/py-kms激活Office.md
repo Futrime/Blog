@@ -11,7 +11,7 @@ tags:
     - Office
     - 激活
 image: https://i.loli.net/2021/02/11/mCKWdzSLH6l7agG.jpg
-draft: true
+draft: false
 ---
 
 在我的 [上一篇博客](https://blog.futrime.com/zh-cn/p/%E8%87%AA%E5%BB%BAkms%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%BF%80%E6%B4%BBwindows/) 中，我提到可以自己搭建KMS服务器激活Windows。实际上，不仅Windows，Microsoft Office系列软件也是支持KMS的，因此，我们也可以使用py-kms实现激活Office.
