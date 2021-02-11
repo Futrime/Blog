@@ -63,3 +63,9 @@ cscript ospp.vbs /act
 再使用 `/dstatus` 看下激活状态。
 
 根据py-kms文档，一次激活只能维持180天，如果需要持续激活，必须保持KMS服务器不掉线。
+
+参考链接：
+
+1. https://github.com/SystemRage/py-kms
+1. https://py-kms.readthedocs.io
+1. https://otp.landian.vip/
